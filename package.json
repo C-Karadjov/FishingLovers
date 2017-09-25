@@ -1,0 +1,34 @@
+{
+  "name": "FishingLovers",
+  "version": "1.0.0",
+  "description": "Sample SPA application for all lovers of fishing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Web-Front-End-Development/FishingLovers.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Web-Front-End-Development/FishingLovers/issues"
+  },
+  "homepage": "https://github.com/Web-Front-End-Development/FishingLovers#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "firebase": "^4.3.1",
+    "handlebars": "^4.0.10",
+    "jquery": "^3.2.1",
+    "navigo": "^5.3.1",
+    "popper.js": "^1.12.3",
+    "systemjs": "^0.20.19",
+    "systemjs-plugin-babel": "0.0.25",
+    "toastr": "^2.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.7.2"
+  }
+}
