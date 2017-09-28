@@ -1,0 +1,39 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    margin-bottom: 2px;
+    box-shadow: inset 0 -10px 15px -10px rgba(0, 0, 0, 0.1);
+    background-image: url("../images/backcround.png");
+}
+
+main {
+    height: 100%;
+    box-shadow: inset 0 10px 15px 0 rgba(0, 0, 0, 0.2);
+    background-image: url("../images/main-background.png");
+}
+
+footer {
+    box-shadow: inset 0 15px 15px -1px rgba(0, 0, 0, 0.3);
+    background-image: -ms-radial-gradient(center top, ellipse farthest-corner, #2D353D 0%, #151A20 60%);
+    background-image: -moz-radial-gradient(center top, ellipse farthest-corner, #2D353D 0%, #151A20 60%);
+    background-image: -o-radial-gradient(center top, ellipse farthest-corner, #2D353D 0%, #151A20 60%);
+    background-image: -webkit-gradient(radial, center top, 0, center top, 359, color-stop(0, #2D353D), color-stop(60, #151A20));
+    background-image: -webkit-radial-gradient(center top, ellipse farthest-corner, #2D353D 0%, #151A20 60%);
+    background-image: radial-gradient(ellipse farthest-corner at center top, #2D353D 0%, #151A20 60%);
+}
+
+.l-footer-nav {
+    background: #0f141a;
+}
+.logo {
+    margin-top: 70px;
+    margin-bottom: 25px;
+}

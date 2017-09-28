@@ -1,0 +1,107 @@
+.l-nav-bar {
+    padding: 0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    border-top: 1px solid #4f5861;
+    border-radius: 10px;
+    background: #353e47;
+    background: linear-gradient(to bottom, #353e47 0%, #323b44 100%);
+}
+
+.l-nav-bar ul ul {
+    position: absolute;
+    top: 50px;
+    left: -15px;
+    width: 220px;
+    padding: 0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    border-left: 1px solid #4f5861;
+    border-radius: 0 0 8px 10px;
+    background: #353e47;
+}
+
+.l-nav-bar ul ul > li {
+    margin: 0;
+    list-style: none;
+    padding: 0 0 20px 37px;
+}
+
+.l-nav-bar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Droid Sans", sans-serif;
+    font-size: 13px;
+    text-shadow: #000000 1px 1px 2px;
+    transition: all 0.05s ease-in-out;
+}
+
+.l-nav-bar a:hover {
+    font-style: italic;
+    color: #8d96a0;
+}
+
+.l-nav-bar ul ul {
+    display: none;
+}
+
+.l-nav-bar ul li:hover > ul {
+    display: block;
+}
+
+.l-nav-bar__list-item {
+    margin: 0;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.l-nav-bar__list-item > li {
+    position: relative;
+    display: inline-block;
+    float: left;
+    padding: 13px 10px 13px 10px;
+}
+
+.l-nav-bar ul ul li:first-child {
+    padding-top: 10px;
+}
+
+.l-nav-bar__list-item__socials-icons {
+    padding: 0;
+    margin-right: 30px;
+    margin-top: 12px;
+    list-style: none;
+}
+
+.l-nav-bar__list-item__socials-icons li {
+    float: right;
+    padding: 0 0 0 10px;
+}
+
+.l-nav-bar__list-item__socials-icons a {
+    font-size: 1.1em;
+    color: #21272f;
+    text-shadow: 2px 2px 3px #434c54;
+}
+
+@media (max-width: 360px) {
+    .l-nav-bar__list-item > li {
+        position: static;
+        display: block;
+        float: none;
+    }
+    .l-nav-bar ul ul {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: none;
+        border-left: none;
+        border-radius: 0 0 0 0;
+    }
+    .l-nav-bar ul ul > li {
+        padding-bottom: 0;
+    }
+}
+@media (max-width: 1200px) {  }
+@media (min-width: 1201px) {  }
