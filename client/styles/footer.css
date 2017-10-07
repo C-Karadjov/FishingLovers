@@ -1,12 +1,16 @@
 .l-footer-article {
-    width: 80%;
     margin-top: 55px;
     margin-bottom: 60px;
     line-height: 150%;
 }
 
+.l-footer-article__middle {
+    /*padding-left: 103px;*/
+    /*padding-right: 80px;*/
+}
+
 .l-footer-article__title {
-    font-family: "Colaborate-Thin", arial;
+    font-family: Colaborate-Thin, sans-serif;
     font-size: 24px;
     color: #ffffff;
     text-shadow: #000000 1px 1px 2px;
@@ -16,7 +20,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: "Droid Sans", sans-serif;
+    font-family: Droid Sans, sans-serif;
     font-size: 12px;
     color: #8d96a0;
 }
@@ -57,14 +61,14 @@
 .l-footer-nav__list-item-right a {
     text-decoration: none;
     color: #ffffff;
-    font-family: "Droid Sans", sans-serif;
+    font-family: Droid Sans, sans-serif;
     font-size: 12px;
     text-shadow: #000000 1px 1px 2px;
     transition: all 0.05s ease-in-out;
 }
 
 .l-footer-nav__list-item-right li {
-    font-family: "Droid Sans", sans-serif;
+    font-family: Droid Sans, sans-serif;
     font-size: 13px;
     color: #8d96a0;
 }
@@ -73,5 +77,15 @@
 .l-footer-nav__list-item-right a:hover {
     font-style: italic;
     color: #8d96a0;
+}
+
+@media (max-width: 360px) {
+    .l-footer-article {
+        margin: 20px;
+    }
+
+    .l-footer-article__middle {
+        padding: 0;
+    }
 }
 

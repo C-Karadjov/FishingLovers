@@ -1,0 +1,214 @@
+.l-home-card {
+    position: relative;
+    width: 296px;
+    height: 220px;
+    margin-top: 60px;
+}
+
+.l-home-card__icon {
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.l-home-card__icon[data-group='1'] {
+    background-image: url('../images/home_icon_1.png');
+    background-repeat: no-repeat;
+}
+
+.l-home-card__icon[data-group='2'] {
+    background-image: url('../images/home_icon_2.png');
+    background-repeat: no-repeat;
+}
+
+.l-home-card__icon[data-group='3'] {
+    background-image: url('../images/home_icon_3.png');
+    background-repeat: no-repeat;
+}
+
+.l-home-card__title {
+    position: absolute;
+    left: 55px;
+    font-family: Colaborate-Thin, sans-serif;
+    color: #1f262d;
+    font-size: 24px;
+}
+
+.l-home-card__content {
+    position: absolute;
+    left: 55px;
+    top: 35px;
+    width: 240px;
+    height: 135px;
+    line-height: 170%;
+    overflow: hidden;
+    font-family: Droid Sans, sans-serif;
+    font-size: 12px;
+    color: #838383;
+}
+
+.l-home-card__button {
+    position: absolute;
+    display: inline-block;
+    top: 183px;
+    left: 210px;
+    width: 75px;
+    margin-top: 10px;
+    padding: 3px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    border-top: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #1c2329;
+    background: linear-gradient(to bottom, #fdfdfd 0%, #efefef 100%);
+    font-family: Droid Sans, sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.l-home-card__button:hover {
+    text-decoration: underline;
+    color: #1f262d;
+}
+
+.l-home-quote {
+    display: flex;
+    position: relative;
+    height: 160px;
+    margin-top: 55px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 8px -10px rgba(0, 0, 0, 0.1),
+    0 -10px 8px -10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to top, #f5f5f5 0%, #ffffff 50%);
+}
+
+.l-home-quote__icon {
+    position: absolute;
+    top: -15px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #b1b1b1;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: #d2d2d2;
+    font-family: Georgia,sans-serif;
+    font-size: 36px;
+}
+
+.l-home-quote__content {
+    width: 960px;
+    font-family: Colaborate-Thin, sans-serif;
+    font-size: 30px;
+    color: inherit;
+}
+
+@media all and (max-width: 960px) {
+    .l-home-quote {
+        height: 100%;
+    }
+}
+
+.l-home-quote__btn {
+    position: absolute;
+    bottom: -25px;
+    display: inline-block;
+    padding-top: 5px;
+    width: 170px;
+    height: 45px;
+    text-decoration: none;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #323a43 0%, #1f262d 100%);
+    font-family: Colaborate-Thin, sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.l-home-quote__btn:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.l-gallery {
+    display: flex;
+    width: 152px;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dadada;
+}
+
+.l-gallery-container {
+    width: 150px;
+    height: 100px;
+    border: 5px solid #FFFFFF;
+    box-shadow: inset 3px 3px 7px 0 rgba(0,0,0,0.5);
+    background-color: #25575e;
+}
+
+.l-gallery-container__img {
+    width: 140px;
+    height: 90px;
+    padding: 0;
+    margin: 0;
+    box-shadow: inset 3px 3px 7px 0 rgba(0,0,0,0.5);
+}
+
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (max-width: 360px) {
+    .l-home-quote__content {
+        font-size: 1.4em;
+    }
+
+    .l-home-card {
+        width: auto;
+    }
+
+    .l-home-card__content {
+        width: auto;
+    }
+    .l-home-card__button {
+        left: 0;
+    }
+}

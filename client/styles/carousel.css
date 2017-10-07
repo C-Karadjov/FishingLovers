@@ -1,0 +1,219 @@
+.l-carousel {
+    position: relative;
+    margin: 80px 0;
+}
+
+.l-carousel-image {
+    display: block;
+    width: 20%;
+    height: 170px;
+    margin: 0 10px;
+    background: #1a2c33;
+}
+
+.l-carousel-image > img {
+    width: 100%;
+    height: 100%;
+}
+
+.l-carousel-image__center {
+    width: 500px;
+    height: 335px;
+}
+
+@media (max-width: 360px) {
+    .l-carousel-image__center {
+        width: 100%;
+    }
+}
+
+.l-carousel-image__active {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: block;
+    z-index: 2;
+    width: 500px;
+    height: 335px;
+    background: #25575e;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.75);
+}
+
+.l-shrink-right {
+    animation: transition .35s ease-out;
+}
+
+.l-grow-right {
+    animation: transition1 .35s ease-out;
+}
+
+.l-shrink-left {
+    animation: transition1 .35s ease-in;
+    animation-direction: reverse;
+}
+
+.l-grow-left {
+    animation: transition .35s ease-in;
+    animation-direction: reverse;
+}
+
+@keyframes transition {
+    0% {
+        margin-left: 10px;
+    }
+    100% {
+        margin-left: -19%;
+    }
+}
+
+@keyframes transition1 {
+    0% {
+        margin-right: -19%;
+    }
+    100% {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .l-carousel-image__active {
+        width: 100%;
+    }
+}
+
+.l-carousel-image__active__overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 87, 94, 0.4);
+    transition: opacity 0.2s ease-in-out;
+}
+
+.l-carousel-image__container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.l-carousel-arrow {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    color: #cccccc;
+    font-size: 2.5em;
+}
+
+.l-carousel-arrow:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.l-carousel-arrow:hover {
+    cursor: pointer;
+}
+
+.l-carousel-arrow__left {
+    left: 20px;
+}
+
+.l-carousel-arrow__right {
+    right: 20px;
+}
+
+.l-carousel-icon {
+    position: relative;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    color: #cccccc;
+    font-size: 2.5em;
+}
+
+.l-carousel-icon:hover {
+    cursor: pointer;
+}
+
+.l-carousel-icon:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.l-carousel-icon__open {
+    color: #cccccc;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.l-carousel-icon__media {
+    margin-right: 20px;
+}
+
+.l-carousel-icon__container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.l-carousel-title__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.85) 0%, transparent 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=1);
+}
+
+.l-carousel-title {
+    margin: 0;
+    padding: 5px 20px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    color: #ffffff;
+    font-family: Colaborate-Thin, sans-serif;
+    font-size: 24px;
+}
+
+.l-carousel-container {
+    width: 100%;
+    height: 330px;
+}

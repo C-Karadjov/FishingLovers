@@ -1,5 +1,7 @@
 .l-nav-bar {
+    height: 50px;
     padding: 0;
+    margin-bottom: 100px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
     border-top: 1px solid #4f5861;
     border-radius: 10px;
@@ -8,8 +10,9 @@
 }
 
 .l-nav-bar ul ul {
+    z-index: 111;
     position: absolute;
-    top: 50px;
+    top: 49px;
     left: -15px;
     width: 220px;
     padding: 0;
@@ -28,10 +31,10 @@
 .l-nav-bar a {
     text-decoration: none;
     color: #ffffff;
-    font-family: "Droid Sans", sans-serif;
+    font-family: Droid Sans, sans-serif;
     font-size: 13px;
     text-shadow: #000000 1px 1px 2px;
-    transition: all 0.05s ease-in-out;
+    transition: color 0.05s ease-in-out;
 }
 
 .l-nav-bar a:hover {
@@ -57,7 +60,7 @@
     position: relative;
     display: inline-block;
     float: left;
-    padding: 13px 10px 13px 10px;
+    padding: 11px 10px 15px 10px;
 }
 
 .l-nav-bar ul ul li:first-child {
@@ -83,11 +86,39 @@
 }
 
 @media (max-width: 360px) {
+    .l-nav-bar {
+        background: none;
+        height: auto;
+    }
+
+    .l-nav-bar a {
+        font-size: 15px;
+    }
+
+    .l-nav-bar__list-item {
+        padding-left: 0;
+        text-align: center;
+    }
+
     .l-nav-bar__list-item > li {
-        position: static;
         display: block;
         float: none;
+        border: 1px solid #12171d;
+        border-radius: 10px;
+        background-color: #353e47;
     }
+
+    .l-nav-bar__list-item li ul li {
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+        border: 1px solid #12171d;
+    }
+
+    .l-nav-bar__list-item li:hover {
+        background: #272f37;
+    }
+
     .l-nav-bar ul ul {
         position: relative;
         top: 0;
@@ -95,13 +126,17 @@
         right: 0;
         left: 0;
         width: 100%;
+        margin-top: 5px;
         box-shadow: none;
         border-left: none;
         border-radius: 0 0 0 0;
     }
-    .l-nav-bar ul ul > li {
-        padding-bottom: 0;
+
+    .l-nav-bar ul ul li:first-child {
+        padding: 10px;
     }
+
 }
+
 @media (max-width: 1200px) {  }
 @media (min-width: 1201px) {  }

@@ -16,7 +16,7 @@ function _get(name) {
     if (cachedTemplates[name]) {
         return Promise.resolve(cachedTemplates[name]);
     } else {
-        let url = `templates/${name}.handlebars`;
+        let url = `templates/${name}.mustache`;
 
         return getTemplate(url)
             .then(template => {

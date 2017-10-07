@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Droid Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Droid Sans'), url('DroidSans.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Droid Sans Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Droid Sans Bold'), url('DroidSans-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Colaborate-Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Colaborate-Light'), url('ColabLig.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Colaborate-Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Colaborate-Medium'), url('ColabMed.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Colaborate-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Colaborate-Regular'), url('ColabReg.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Colaborate-Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Colaborate-Thin'), url('ColabThi.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Colaborate-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Colaborate-Bold'), url('ColabBol.woff') format('woff');
+}
