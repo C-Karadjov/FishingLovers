@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 function toggleButtonsIfLoggedIn() {
     firebase.auth().onAuthStateChanged((user) => {
         if (user) {
@@ -9,9 +11,9 @@ function toggleButtonsIfLoggedIn() {
             $('#l-nav-bar__profile').hide();
             $('#l-nav-bar__login').show();
             $('#l-nav-bar__register').show();
-            $('#l-nav-bar__logout').hide()
+            $('#l-nav-bar__logout').hide();
         }
-    })
+    });
 }
 
 export { toggleButtonsIfLoggedIn };

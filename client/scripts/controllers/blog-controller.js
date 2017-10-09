@@ -6,7 +6,6 @@ import * as db from 'db';
 
 const $mainContainer = $('#main-container');
 const $carouselContainer = $('#carousel-container');
-const $addArticleBtn = $('.l-add-article__btn');
 
 function getBlogPage() {
     $carouselContainer.html('');
@@ -38,15 +37,15 @@ function getBlogDetails() {
     $carouselContainer.html('');
     return compile('blog-details')
         .then((template) => {
-            $mainContainer.html(template)
-        })
+            $mainContainer.html(template);
+        });
 }
 
 function getBlogCreatePage() {
     $carouselContainer.html('');
     return compile('blog-create')
         .then((template) => {
-            $mainContainer.html(template)
+            $mainContainer.html(template);
         })
         .then(() => {
             const $title = $('#l-form-article__title');
@@ -63,11 +62,11 @@ function getBlogCreatePage() {
                 
                 let date = new Date();
                 const options = {
-                    year: "numeric", month: "long",
-                    day: "numeric", hour: "2-digit", minute: "2-digit"
+                    year: 'numeric', month: 'long',
+                    day: 'numeric', hour: '2-digit', minute: '2-digit'
                 };
                 
-                date = date.toLocaleDateString("bg-BG", options);
+                date = date.toLocaleDateString('bg-BG', options);
                 
                 const article = new Article(title, photoUrl, content, category, date);
                 

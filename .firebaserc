@@ -1,5 +1,6 @@
 {
   "projects": {
     "default": "fishinglovers-a6c56"
+    "deploy": "https://fishinglovers-a6c56.firebaseapp.com"
   }
 }

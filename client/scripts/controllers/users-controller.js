@@ -11,7 +11,7 @@ function login() {
     $carouselContainer.html('');
     return compile('login')
         .then((template) => {
-            $mainContainer.html(template)
+            $mainContainer.html(template);
         })
         .then(() => {
             const $email = $('#l-form-login__email');
@@ -42,7 +42,7 @@ function register() {
     $carouselContainer.html('');
     return compile('register')
         .then((template) => {
-            $mainContainer.html(template)
+            $mainContainer.html(template);
         })
         .then(() => {
             const $firstName = $('#l-form-register__firstName');
@@ -72,7 +72,7 @@ function register() {
                     }
                 });
             });
-        })
+        });
 }
 
 function logout() {
@@ -82,7 +82,7 @@ function logout() {
         db.signOut();
         toastr.success('Successfully Log out!');
         $(location).attr('href', '#/home');
-    })
+    });
 }
 
 function profile() {
@@ -96,7 +96,7 @@ function profile() {
         return compile('profile', userData)
             .then((template) => {
                 $mainContainer.html(template);
-            })
+            });
     });
 }
 

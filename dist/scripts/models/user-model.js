@@ -1,0 +1,1 @@
+"use strict";function _classCallCheck(s,e){if(!(s instanceof e))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(exports,"__esModule",{value:!0});var User=function s(e,t,a,r){_classCallCheck(this,s),this.firstName=e,this.lastName=t,this.username=a,this.email=r};exports.User=User;

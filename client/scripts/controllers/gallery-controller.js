@@ -29,8 +29,8 @@ function getGalleryPage() {
                     const downloadURL = uploadTask.snapshot.downloadURL;
                     console.log(downloadURL);
                 });
-            })
-        })
+            });
+        });
 }
 
 export { getGalleryPage };

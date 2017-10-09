@@ -1,0 +1,74 @@
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<p class="l-page-nav">Blog >> Carp fishing</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-8 col-sm-12">
+			{{#each this}}
+			<article>
+				<h4 class="l-post-title">{{title}}</h4>
+				<div class="l-page-break"></div>
+				<h5 class="l-post-title-info">Posted by Admin on {{date}} in Carp Fishing | 30 Comments</h5>
+				<div class="l-post">
+					<div class="l-post-img">
+						<img class="l-post-img__container" src="{{photoUrl}}" alt="post image">
+					</div>
+					<div class="l-post-content">
+						{{content}}
+					</div>
+				</div>
+				<div class="l-post-btn">
+					<a class="l-dark-btn" href="#/blog/details">Read More</a>
+				</div>
+				<div class="l-clear-float"></div>
+			</article>
+			{{/each}}
+			<div class="l-page-break"></div>
+			<div class="l-page-paginate">
+				<p class="l-page-paginate__info">Page 2 of 4</p>
+				<a class="l-page-pagination__link" href="#">1</a>
+				<a class="l-page-pagination__link" href="#">2</a>
+				<a class="l-page-pagination__link" href="#">3</a>
+				<a class="l-page-pagination__link" href="#">4</a>
+			</div>
+		</div>
+		<div class="col-lg-4 col-sm-12">
+			<aside class="l-aside">
+				<div class="l-aside-post">
+					<h5 class="l-aside-post__title">Recent Posts</h5>
+					<div class="l-aside-post__content">
+						<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							Aliquam architecto, at commodi debitis deleniti distinctio
+							dolore dolores ea error exercitationem facilis fugiat
+							nam nulla tempora temporibus
+							vel voluptate voluptates voluptatum.
+							vel voluptate voluptates voluptatum.
+							vel voluptate voluptates voluptatum.nam nulla tempora temporibus
+							nam nulla tempora temporibus
+						</div>
+					</div>
+				</div>
+				<div class="l-aside-event">
+					<h5 class="l-aside-event__title">Recent Events</h5>
+					<div class="l-aside-event__content">
+						<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							Aliquam architecto, at commodi debitis deleniti distinctio
+							dolore dolores ea error exercitationem facilis fugiat
+							nam nulla tempora temporibus
+							vel voluptate voluptates voluptatum.
+							vel voluptate voluptates voluptatum.
+							vel voluptate voluptates voluptatum.nam nulla tempora temporibus
+							nam nulla tempora temporibus
+						</div>
+					</div>
+				</div>
+			</aside>
+			<div class="l-add-article">
+				<a class="l-add-article__btn" href="#/blog/create">Add Article</a>
+			</div>
+		</div>
+	</div>
+</div>
+

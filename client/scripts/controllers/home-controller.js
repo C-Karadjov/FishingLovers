@@ -13,8 +13,8 @@ function getHomePage() {
             compile('home')
                 .then((template) => {
                     $mainContainer.html(template);
-                })
-        })
+                });
+        });
     
 }
 
