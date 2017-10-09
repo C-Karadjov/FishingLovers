@@ -7,25 +7,23 @@ const $carouselContainer = $('#carousel-container');
 function getGalleryPage() {
     $carouselContainer.html('');
     return compile('gallery')
-        .then((template)=> {
+        .then((template) => {
             $mainContainer.html(template);
         })
-        .then(()=> {
+        .then(() => {
             const $uploadButton = $('#upload-button');
             const $file = $('#file');
             
             $uploadButton.on('click', () => {
                 const selectedFile = $file[0].files[0];
                 const fileName = selectedFile.name;
-                console.log(fileName);
-                console.log(selectedFile);
                 const storageRef = firebase.storage().ref('/images/' + fileName);
-                const uploadTask =storageRef.put(selectedFile);
+                const uploadTask = storageRef.put(selectedFile);
                 
-                uploadTask.on('state_changed', function(snapshot){
-                }, function(error) {
+                uploadTask.on('state_changed', function (snapshot) {
+                }, function (error) {
                     // Handle unsuccessful uploads
-                }, function() {
+                }, function () {
                     // Handle successful uploads on complete
                     // For instance, get the download URL: https://firebasestorage.googleapis.com/...
                     const downloadURL = uploadTask.snapshot.downloadURL;

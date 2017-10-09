@@ -1,6 +1,7 @@
 html {
     height: 100%;
 }
+
 body {
     height: 100%;
     margin: 0;
@@ -39,6 +40,7 @@ footer {
 .l-footer-nav {
     background: #0f141a;
 }
+
 .logo {
     margin-top: 70px;
     margin-bottom: 25px;
@@ -134,12 +136,14 @@ button[type="submit"]:hover {
 }
 
 .l-aside-post,
-.l-aside-event {
+.l-aside-event,
+.l-aside-comment {
     margin-bottom: 40px;
 }
 
 .l-aside-post__title,
-.l-aside-event__title{
+.l-aside-event__title,
+.l-aside-comment__title {
     font-family: Colaborate-Thin, sans-serif;
     font-size: 24px;
     color: #1f262d;
@@ -150,7 +154,7 @@ button[type="submit"]:hover {
     border: 1px solid #dadada;
     border-radius: 10px;
     text-shadow: 0 1px 0 rgba(94, 94, 94, 0.3);
-    box-shadow: 1px 1px 1px 0 rgba(255,255,255,1);
+    box-shadow: 1px 1px 1px 0 rgba(255, 255, 255, 1);
     background: linear-gradient(to bottom, #ffffff 60%, #f7f7f7 100%);
     line-height: 180%;
     font-family: Droid Sans, sans-serif;
@@ -171,12 +175,54 @@ button[type="submit"]:hover {
     border-radius: 10px;
     overflow: hidden;
     text-shadow: 0 1px 0 rgba(94, 94, 94, 0.3);
-    box-shadow: 1px 1px 1px 0 rgba(255,255,255,1);
+    box-shadow: 1px 1px 1px 0 rgba(255, 255, 255, 1);
     background: linear-gradient(to bottom, #ffffff 60%, #f7f7f7 100%);
     line-height: 310%;
     font-family: Droid Sans, sans-serif;
     font-size: 12px;
     color: #5e5e5e;
+}
+
+.l-aside-comment__content {
+    height: 290px;
+    padding: 20px;
+    padding-left: 40px;
+    overflow: hidden;
+    border: 1px solid #dadada;
+    border-radius: 10px;
+    text-shadow: 0 1px 0 rgba(94, 94, 94, 0.3);
+    box-shadow: 1px 1px 1px 0 rgba(255, 255, 255, 1);
+    background: linear-gradient(to bottom, #ffffff 60%, #f7f7f7 100%);
+    line-height: 310%;
+    font-family: Droid Sans, sans-serif;
+    font-size: 12px;
+    color: #5e5e5e;
+}
+
+.l-aside-comment__content li {
+    height: 37px;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.l-aside-comment__content li:before {
+    content: '• ';
+    color: #171c25;
+}
+
+.l-forms {
+    margin-bottom: 30px;
+}
+
+.l-forms__label-text {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: Droid Sans, sans-serif;
+    color: #838383;
+}
+
+.hidden {
+    display: none;
 }
 
 @media (max-width: 360px) {

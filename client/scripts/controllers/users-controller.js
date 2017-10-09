@@ -27,23 +27,15 @@ function login() {
                     .catch((err) => toastr.error(err.message));
             });
             
-            firebase.auth().onAuthStateChanged((fbUser) => {
-                if (fbUser) {
+            db.checkIsSignIn((user) => {
+                if (user) {
                     $(location).attr('href', '#/home');
-                    $('#l-nav-bar__login').hide();
-                    $('#l-nav-bar__register').hide();
-                    $('#l-nav-bar__logout').show();
-                    console.log('login');
-                } else {
-                    $('#l-nav-bar__login').show();
-                    $('#l-nav-bar__register').show();
-                    $('#l-nav-bar__logout').hide();
-                    console.log('not logged in');
+                }
+                else {
+                    $(location).attr('href', '#/login');
                 }
             });
-            
-        })
-    
+        });
 }
 
 function register() {
@@ -71,14 +63,12 @@ function register() {
                     .then((createdUser) => toastr.success('Successfully registered!'))
                     .catch((err) => toastr.error(err.message));
                 
-                firebase.auth().onAuthStateChanged((firebaseUser) => {
+                db.checkIsSignIn((firebaseUser) => {
                     if (firebaseUser) {
                         const refUser = firebase.database().ref();
                         const user = new User(firstName, lastName, username, email);
                         refUser.child('users/' + firebaseUser.uid).set(user);
                         $(location).attr('href', '#/home');
-                        $('#l-nav-bar__login').hide();
-                        $('#l-nav-bar__register').hide();
                     }
                 });
             });
@@ -89,7 +79,7 @@ function logout() {
     const $btnLogout = $('#l-nav-bar__logout');
     
     $btnLogout.on('click', () => {
-        firebase.auth().signOut();
+        db.signOut();
         toastr.success('Successfully Log out!');
         $(location).attr('href', '#/home');
     })

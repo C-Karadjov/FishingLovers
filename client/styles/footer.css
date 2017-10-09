@@ -89,3 +89,9 @@
     }
 }
 
+@media (max-width: 994px) {
+    .l-footer-article {
+        margin-top: 20px;
+    }
+}
+

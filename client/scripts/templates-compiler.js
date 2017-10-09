@@ -17,7 +17,7 @@ function _get(name) {
         return Promise.resolve(cachedTemplates[name]);
     } else {
         let url = `templates/${name}.mustache`;
-
+        
         return getTemplate(url)
             .then(template => {
                 cachedTemplates[name] = template;

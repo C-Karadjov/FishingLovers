@@ -9,17 +9,19 @@ SystemJS.config({
         'main': './scripts/main.js',
         'templatesCompiler': './scripts/templates-compiler.js',
         'requester': './scripts/requester.js',
-        'db':'./scripts/db.js',
+        'db': './scripts/db.js',
         'toastrConfig': './scripts/toastr-config.js',
+        'utils': './scripts/utils.js',
         
         // models
-        'userModel': './models/user-model.js',
+        'userModel': './scripts/models/user-model.js',
+        'articleModel': './scripts/models/article-model.js',
         
         // controllers
-        'blogController': './controllers/blog-controller.js',
-        'homeController': './controllers/home-controller.js',
-        'usersController': './controllers/users-controller.js',
-        'galleryController': './controllers/gallery-controller.js',
+        'blogController': './scripts/controllers/blog-controller.js',
+        'homeController': './scripts/controllers/home-controller.js',
+        'usersController': './scripts/controllers/users-controller.js',
+        'galleryController': './scripts/controllers/gallery-controller.js',
         
         //libraries
         'jquery': './libs/jquery.js',

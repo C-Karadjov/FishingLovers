@@ -8,8 +8,18 @@ function singIn(email, password) {
     return firebase.auth().signInWithEmailAndPassword(email, password);
 }
 
-function singOut() {
+function signOut() {
     return firebase.auth().signOut();
 }
 
-export { createUser, singIn, singOut };
+function checkIsSignIn(user) {
+    return firebase.auth().onAuthStateChanged(user);
+}
+
+function addArticle(article) {
+    const articles = firebase.database().ref('/articles');
+    articles.push(article);
+    return Promise.resolve(article);
+}
+
+export { createUser, singIn, signOut, checkIsSignIn, addArticle};

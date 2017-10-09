@@ -1,0 +1,39 @@
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<p class="l-page-nav">Blog >> Create article</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-8 col-sm-12">
+			<p class="l-article-title">Create new article</p>
+			<div class="l-page-break"></div>
+			<div class="l-forms">
+				<div class="form-group">
+					<label class="l-forms__label-text" for="l-form-article__title">title</label>
+					<input type="text" name="title" required autofocus class="form-control" id="l-form-article__title">
+				</div>
+				<div class="form-group">
+					<label class="l-forms__label-text" for="l-form-article__photoUrl">photo url</label>
+					<input type="text" name="photoUrl" required class="form-control" id="l-form-article__photoUrl">
+				</div>
+				<div class="form-group">
+					<label class="l-forms__label-text" for="l-form-article__category">select category</label>
+					<select name="l-form-article__category" class="form-control" id="l-form-article__category">
+						<option value="carp">Carp fishing</option>
+						<option value="sea">Sea fishing</option>
+						<option value="places">Where to fish</option>
+						<option value="techniques">Fishing techniques</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label class="l-forms__label-text" for="l-form-article__content">content</label>
+					<textarea type="text" name="content" required class="form-control" id="l-form-article__content"
+							  rows="7"></textarea>
+				</div>
+				<button type="submit" id="l-form-article-create" class="l-dark-btn">Create</button>
+				<div class="l-page-break"></div>
+			</div>
+		</div>
+	</div>
+</div>
